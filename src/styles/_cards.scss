@@ -4,27 +4,60 @@
     display: grid;
     row-gap: 2rem;
 
+    //layout 
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    column-gap: 3rem;
+    grid-template-areas: 
+        "supervisor"
+        "team"
+        "karma"
+        "calculator"
+    ;
+    @media(min-width: 655px){
+        // grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+            "supervisor  karma"
+            "team calculator"
+        ;
+    }
+    @media(min-width: 930px){
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+            ". team ."
+            "supervisor team calculator"
+            "supervisor karma calculator"
+            ". karma ."
+        ;
+        
+    }
     &__card{
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
         border-radius: .7rem;
         --border-size: .5rem;
         padding: 0 3rem 3rem;
-        max-width: 31.5rem;
+        max-width: 36.5rem;
 
         //layout
         display: grid;
+        
 
         &--team-builder{
             border-top: var(--color-red) solid var(--border-size);
+            grid-area: team;
         }
         &--supervisor{
             border-top: var(--color-cyan) solid var(--border-size);
+            grid-area: supervisor;
         }
         &--karma{
             border-top: var(--color-orange) solid var(--border-size);
+            grid-area: karma;
         }
         &--calculator{
             border-top: var(--color-blue) solid var(--border-size);
+            grid-area: calculator;
         }
     }
 
