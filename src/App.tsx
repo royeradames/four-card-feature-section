@@ -48,7 +48,7 @@ function App() {
     <main>
       <header className="header">
         <h2 className="header__title">{data.title}</h2>
-        <h1 className="header__tagLine">{data.tagLine}</h1>
+        <h1 className="header__tag-line">{data.tagLine}</h1>
         <p className="header__leading-message">{data.leadingMessage}</p>
       </header>
 
