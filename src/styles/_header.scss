@@ -1,0 +1,18 @@
+.header{
+    padding: 0 3rem;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    &__title{
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 200;
+    }
+    &__tag-line{
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--color-blue-900);
+
+    }
+}
