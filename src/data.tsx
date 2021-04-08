@@ -16,23 +16,27 @@ const data = {
       title: "Supervisor",
       message: "Monitors activity to identify project roadblocks",
       icon: supervisorIcon,
+      alt: "Inpecting eye",
     },
     {
       title: "Team Builder",
       message:
         "Scans our talent network to create the optimal team for your project",
       icon: teamBuilderIcon,
+      alt: "Red house in a web page",
     },
     {
       title: "Karma",
       message: "Regularly evaluates our talent to ensure quality",
       icon: karmaIcon,
+      alt: "a power on light bult",
     },
     {
       title: "Calculator",
       message:
         "Uses data from past projects to provide better delivery estimates",
       icon: calculatorIcon,
+      alt: "computer showing graphs",
     },
   ],
 };
