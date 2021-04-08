@@ -1,0 +1,16 @@
+// where I used to put my index content
+
+// bring normalize css styles
+@import-sanitize;
+
+// bring front family
+// @import url(); 
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
