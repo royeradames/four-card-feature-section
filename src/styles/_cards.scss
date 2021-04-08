@@ -1,7 +1,43 @@
 .cards{
     list-style: none;
-    
+    padding: 0;
+    display: grid;
+    row-gap: 2rem;
+
+    &__card{
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        border-radius: .7rem;
+        --border-size: .5rem;
+        padding: 0 3rem 3rem;
+        max-width: 31.5rem;
+
+        //layout
+        display: grid;
+
+        &--team-builder{
+            border-top: var(--color-red) solid var(--border-size);
+        }
+        &--supervisor{
+            border-top: var(--color-cyan) solid var(--border-size);
+        }
+        &--karma{
+            border-top: var(--color-orange) solid var(--border-size);
+        }
+        &--calculator{
+            border-top: var(--color-blue) solid var(--border-size);
+        }
+    }
+
     &__title{
         color: var(--color-blue-900);
+        margin-bottom: .5rem;
+        margin-top: 2rem ;
+    }
+    &__message{
+        margin: 0;
+    }
+    &__icon{
+        justify-self: right;
+        margin-top: 2rem;
     }
 }
