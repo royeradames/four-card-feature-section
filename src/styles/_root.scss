@@ -1,5 +1,6 @@
 :root{
     // where the colors and other variables live
+    /* colors */
     //primary
     --color-red: hsl(0, 78%, 62%);
     --color-cyan: hsl(180, 62%, 55%);
@@ -9,4 +10,9 @@
     --color-blue-900: hsl(234, 12%, 34%);
     --color-grayish-blue: hsl(229, 6%, 66%);
     --color-gray-100: hsl(0, 0%, 98%);
+
+    /* base font size */
+    --base-font-size: 1.5rem
+
+    
 }
