@@ -29,14 +29,14 @@ function App() {
     ) => "supervisor" | "team-builder" | "karma" | "calculator" | ""
   ) => {
     return (
-      <ul className="card">
+      <ul className="cards">
         {cards.map((card) => {
           const cssElementName = cardSpecific(card.title);
           return (
-            <li className={`card__${cssElementName}`}>
-              <h3 className="card__title">{card.title}</h3>
-              <p className="card__message">{card.message}</p>
-              <img src={card.icon} alt={card.alt} className="card__icon" />
+            <li className={`cards__${cssElementName}`}>
+              <h3 className="cards__title">{card.title}</h3>
+              <p className="cards__message">{card.message}</p>
+              <img src={card.icon} alt={card.alt} className="cards__icon" />
             </li>
           );
         })}
