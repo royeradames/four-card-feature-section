@@ -12,7 +12,10 @@
     --color-gray-100: hsl(0, 0%, 98%);
 
     /* base font size */
-    --base-font-size: 1.5rem
+    --base-font-size: 1.5rem;
 
-    
+    /* media break points */
+    --mobile-size: 37.5rem;
+    --desktop-size: 144rem;
+
 }
