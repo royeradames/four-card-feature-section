@@ -11,7 +11,7 @@ function App() {
         return "team-builder";
       case "Karma":
         return "karma";
-      case "calculator":
+      case "Calculator":
         return "calculator";
       default:
         return "";
@@ -33,7 +33,7 @@ function App() {
         {cards.map((card) => {
           const cssElementName = cardSpecific(card.title);
           return (
-            <li className={`cards__${cssElementName}`}>
+            <li className={`cards__card cards__card--${cssElementName}`}>
               <h3 className="cards__title">{card.title}</h3>
               <p className="cards__message">{card.message}</p>
               <img src={card.icon} alt={card.alt} className="cards__icon" />
